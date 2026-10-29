@@ -135,6 +135,18 @@ Remove-Item "$HOME\bin\style-*.cmd", "$HOME\bin\styles.cmd", "$HOME\.termstyle"
 [Environment]::SetEnvironmentVariable('PROMPT', $null, 'User')
 ```
 
+## 7. Keep your fork in sync
+
+Tuned some values or edited the profile? Push your setup back to your own copy of this repo:
+
+```powershell
+git clone https://github.com/<you>/terminal-attack.git "$HOME\terminal-attack"   # once
+sync-styles                          # copy profile, shaders, schemes, themes -> commit -> push
+sync-styles "Brighter matrix rain"   # with your own commit message
+```
+
+It only commits when something actually changed.
+
 ## Repo layout
 
 ```
@@ -146,3 +158,7 @@ shaders/matrix-rain.hlsl             old TV + glyph rain + glow
 terminal/schemes.json                color schemes
 terminal/themes.json                 tab/titlebar themes
 ```
+
+## License
+
+[MIT](LICENSE)

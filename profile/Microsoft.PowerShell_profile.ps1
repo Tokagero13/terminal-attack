@@ -362,3 +362,30 @@ function reload-style {
     Start-Sleep -Seconds 2
     Set-TermStyle $current 6>$null
 }
+
+# ── sync-styles: copy this setup into the terminal-attack repo and push ──
+function sync-styles {
+    param([string]$Message = 'Update styles')
+    $repo = "$HOME\terminal-attack"
+    if (-not (Test-Path "$repo\.git")) {
+        Write-Host "No repo at $repo. Clone yours first: git clone https://github.com/<you>/terminal-attack.git `"$repo`"" -ForegroundColor Red; return
+    }
+    Copy-Item $PROFILE "$repo\profile\Microsoft.PowerShell_profile.ps1" -Force
+    foreach ($s in $TermStyles.Values.Defaults.'experimental.pixelShaderPath' | Where-Object { $_ } | Select-Object -Unique) {
+        Copy-Item $s "$repo\shaders\" -Force
+    }
+    # Only the schemes/themes the styles use, one object per item, same layout as the repo files.
+    $settings = Get-Content $TermSettings -Raw | ConvertFrom-Json
+    $used = @{ schemes = @($TermStyles.Values.Defaults.colorScheme); themes = @($TermStyles.Values.Theme) }
+    foreach ($k in 'schemes', 'themes') {
+        $items = @($settings.$k | Where-Object { $used[$k] -contains $_.name })
+        $json  = "[`n" + (($items | ForEach-Object { ($_ | ConvertTo-Json -Depth 10) -replace '(?m)^', '    ' }) -join ",`n") + "`n]`n"
+        [IO.File]::WriteAllText("$repo\terminal\$k.json", $json, (New-Object Text.UTF8Encoding $false))
+    }
+    git -C $repo add -A 2>$null
+    if (-not (git -C $repo status --porcelain)) { 'Nothing changed, repo is up to date.'; return }
+    git -C $repo status --short
+    git -C $repo commit -q -m $Message
+    git -C $repo push -q 2>&1 | Where-Object { $_ -notmatch '^To |->' }
+    if ($LASTEXITCODE -eq 0) { "Pushed: $Message" } else { Write-Host 'Push failed; the commit is saved locally. Run: git -C ~\terminal-attack push' -ForegroundColor Red }
+}
