@@ -1,0 +1,142 @@
+[
+    {
+        "name":  "Amber CRT",
+        "tab":  {
+                    "background":  "#4A2F00FF",
+                    "iconStyle":  "default",
+                    "showCloseButton":  "hover",
+                    "unfocusedBackground":  "#120B00FF"
+                },
+        "tabRow":  {
+                       "background":  "#120B00FF",
+                       "unfocusedBackground":  "#120B00FF"
+                   },
+        "window":  {
+                       "applicationTheme":  "dark",
+                       "experimental.rainbowFrame":  false,
+                       "frame":  null,
+                       "unfocusedFrame":  null,
+                       "useMica":  false
+                   }
+    },
+    {
+        "name":  "Classic Mac",
+        "tab":  {
+                    "background":  "#FFFFFFFF",
+                    "iconStyle":  "default",
+                    "showCloseButton":  "hover",
+                    "unfocusedBackground":  "#EEEEEEFF"
+                },
+        "tabRow":  {
+                       "background":  "#E0E0E0FF",
+                       "unfocusedBackground":  "#EEEEEEFF"
+                   },
+        "window":  {
+                       "applicationTheme":  "light",
+                       "experimental.rainbowFrame":  false,
+                       "frame":  null,
+                       "unfocusedFrame":  null,
+                       "useMica":  false
+                   }
+    },
+    {
+        "name":  "Mac Platinum",
+        "tab":  {
+                    "background":  "#DDDDDDFF",
+                    "iconStyle":  "default",
+                    "showCloseButton":  "hover",
+                    "unfocusedBackground":  "#C8C8C8FF"
+                },
+        "tabRow":  {
+                       "background":  "#BBBBBBFF",
+                       "unfocusedBackground":  "#C8C8C8FF"
+                   },
+        "window":  {
+                       "applicationTheme":  "light",
+                       "experimental.rainbowFrame":  false,
+                       "frame":  null,
+                       "unfocusedFrame":  null,
+                       "useMica":  false
+                   }
+    },
+    {
+        "name":  "Matrix",
+        "tab":  {
+                    "background":  "#003B00FF",
+                    "iconStyle":  "default",
+                    "showCloseButton":  "hover",
+                    "unfocusedBackground":  "#0D0208FF"
+                },
+        "tabRow":  {
+                       "background":  "#0D0208FF",
+                       "unfocusedBackground":  "#0D0208FF"
+                   },
+        "window":  {
+                       "applicationTheme":  "dark",
+                       "experimental.rainbowFrame":  false,
+                       "frame":  null,
+                       "unfocusedFrame":  null,
+                       "useMica":  false
+                   }
+    },
+    {
+        "name":  "Neon Cyberpunk",
+        "tab":  {
+                    "background":  "#1A0B33FF",
+                    "iconStyle":  "default",
+                    "showCloseButton":  "hover",
+                    "unfocusedBackground":  "#0A0517FF"
+                },
+        "tabRow":  {
+                       "background":  "#0A0517FF",
+                       "unfocusedBackground":  "#0A0517FF"
+                   },
+        "window":  {
+                       "applicationTheme":  "dark",
+                       "experimental.rainbowFrame":  false,
+                       "frame":  null,
+                       "unfocusedFrame":  null,
+                       "useMica":  false
+                   }
+    },
+    {
+        "name":  "Retro Arcade",
+        "tab":  {
+                    "background":  "#2121DEFF",
+                    "iconStyle":  "default",
+                    "showCloseButton":  "hover",
+                    "unfocusedBackground":  "#000000FF"
+                },
+        "tabRow":  {
+                       "background":  "#000000FF",
+                       "unfocusedBackground":  "#000000FF"
+                   },
+        "window":  {
+                       "applicationTheme":  "dark",
+                       "experimental.rainbowFrame":  false,
+                       "frame":  null,
+                       "unfocusedFrame":  null,
+                       "useMica":  false
+                   }
+    },
+    {
+        "name":  "macOS Dark",
+        "tab":  {
+                    "background":  "#1C1C1EFF",
+                    "iconStyle":  "default",
+                    "showCloseButton":  "hover",
+                    "unfocusedBackground":  "#2C2C2EFF"
+                },
+        "tabRow":  {
+                       "background":  "#2C2C2EFF",
+                       "unfocusedBackground":  "#2C2C2EFF"
+                   },
+        "window":  {
+                       "applicationTheme":  "dark",
+                       "experimental.rainbowFrame":  false,
+                       "frame":  null,
+                       "unfocusedFrame":  null,
+                       "useMica":  false
+                   }
+    }
+]
