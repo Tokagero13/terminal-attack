@@ -22,6 +22,33 @@ style-matrix --set RAIN 0.3   # tune it
 | `style-p10k` | Powerlevel10k-look powerline prompt: path, git branch/dirty count, status, duration, clock |
 | `style-posh` | Real Oh My Posh with the `powerlevel10k_rainbow` theme |
 
+## Screenshots
+
+<table>
+<tr>
+<td><b>neon</b><br><img src="screenshots/neon.png" alt="neon style"></td>
+<td><b>arcade</b> (coin cursor)<br><img src="screenshots/arcade.png" alt="arcade style"></td>
+</tr>
+<tr>
+<td><b>matrix</b> (glyph rain, old TV)<br><img src="screenshots/matrix.png" alt="matrix style"></td>
+<td><b>amber</b><br><img src="screenshots/amber.png" alt="amber style"></td>
+</tr>
+<tr>
+<td><b>mac</b><br><img src="screenshots/mac.png" alt="classic mac style"></td>
+<td><b>platinum</b><br><img src="screenshots/platinum.png" alt="mac platinum style"></td>
+</tr>
+<tr>
+<td><b>macos</b><br><img src="screenshots/macos.png" alt="macos dark style"></td>
+<td><b>p10k</b><br><img src="screenshots/p10k.png" alt="p10k style"></td>
+</tr>
+<tr>
+<td><b>posh</b> (Oh My Posh)<br><img src="screenshots/posh.png" alt="oh my posh style"></td>
+<td></td>
+</tr>
+</table>
+
+The arcade and matrix effects are animated: the coin spins, the rain falls, stars twinkle.
+
 ---
 
 ## 1. Requirements
